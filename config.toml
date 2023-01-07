@@ -3,11 +3,11 @@ theme = "LoveIt"
 [author]
   name = "Sergei Manin"
   email = "manin.serg@gmail.com"
-  link = "https://github.com/maninserg/"
+  link = "https://maninserg.github.io/"
 
 publishDir="docs"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "ru"
 
 [languages]
   [languages.en]

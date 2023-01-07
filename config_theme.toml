@@ -440,10 +440,10 @@
 
   # Analytics config
   [params.analytics]
-    enable = false
+    enable = true #[CHANGE]
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-X1YR2ZDMNF" #[CHANGE]
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics

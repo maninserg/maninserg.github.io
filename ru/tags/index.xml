@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Тэг - Manin Sergei DevBlog</title>
+        <link>/ru/tags/</link>
+        <description>Tags - Тэг - Manin Sergei DevBlog</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>manin.serg@gmail.com (Sergei Manin)</managingEditor>
+            <webMaster>manin.serg@gmail.com (Sergei Manin)</webMaster><lastBuildDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</lastBuildDate><atom:link href="/ru/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>configuration</title>
+    <link>/ru/tags/configuration/</link>
+    <pubDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</pubDate>
+    <author>Sergei Manin</author>
+    <guid>/ru/tags/configuration/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>MacOS</title>
+    <link>/ru/tags/macos/</link>
+    <pubDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</pubDate>
+    <author>Sergei Manin</author>
+    <guid>/ru/tags/macos/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

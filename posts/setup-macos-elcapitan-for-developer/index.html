@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Настройка MacOS ElCapitan для разработки - Manin Sergei DevBlog</title><meta name="Description" content="This is Manin Sergei DevBlog"><meta property="og:title" content="Настройка MacOS ElCapitan для разработки" />
+<meta property="og:description" content="1. Настройка клавиатуры Motospeed Ck104  Заходим в System Preference/Keyboard/Modifier Keys, там выбираем USB Gaming Keyboard. И меняем клавиши Control и Option местами, чтобы было соотвествие расположения клавиш Apple Keyboard:
+2. Установка XCode и Command Line Tools  Максимальная версия XCode доступная для установки на MacOS ElCapitan 8.2.1.
+Скачиваем XCode и соотвествующую ему версию CLT c офиц.сайт Apple
+Устанавливаем XCode 8.2.1 из файла Xcode_8.2.1.xip и CLT из файла Command_Line_Tools_macOS_10.11_for_Xcode_8.2.dmg
+3. Установка MacPorts и пакетов  Страница со всеми доступными версиями MacPorts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/setup-macos-elcapitan-for-developer/" />
+<meta property="article:published_time" content="2023-01-06T22:04:28+03:00" />
+<meta property="article:modified_time" content="2023-01-06T22:04:28+03:00" /><meta property="og:site_name" content="Manin Sergei DevBlog" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Настройка MacOS ElCapitan для разработки"/>
+<meta name="twitter:description" content="1. Настройка клавиатуры Motospeed Ck104  Заходим в System Preference/Keyboard/Modifier Keys, там выбираем USB Gaming Keyboard. И меняем клавиши Control и Option местами, чтобы было соотвествие расположения клавиш Apple Keyboard:
+2. Установка XCode и Command Line Tools  Максимальная версия XCode доступная для установки на MacOS ElCapitan 8.2.1.
+Скачиваем XCode и соотвествующую ему версию CLT c офиц.сайт Apple
+Устанавливаем XCode 8.2.1 из файла Xcode_8.2.1.xip и CLT из файла Command_Line_Tools_macOS_10.11_for_Xcode_8.2.dmg
+3. Установка MacPorts и пакетов  Страница со всеми доступными версиями MacPorts"/>
+<meta name="application-name" content="Manin Sergei DevBlog">
+<meta name="apple-mobile-web-app-title" content="Manin Sergei DevBlog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="favicon_30-30.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/setup-macos-elcapitan-for-developer/" /><link rel="prev" href="/posts/clean-install-macos-elcapitan/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Настройка MacOS ElCapitan для разработки",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/setup-macos-elcapitan-for-developer\/"
+        },"genre": "posts","keywords": "MacOS, configuration","wordcount":  436 ,
+        "url": "\/posts\/setup-macos-elcapitan-for-developer\/","datePublished": "2023-01-06T22:04:28+03:00","dateModified": "2023-01-06T22:04:28+03:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Segei Manin"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Manin Sergei DevBlog"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/setup-macos-elcapitan-for-developer/" selected>English</option><option value="/ru/posts/setup-macos-elcapitan-for-developer/">Russian</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Manin Sergei DevBlog"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/setup-macos-elcapitan-for-developer/" selected>English</option><option value="/ru/posts/setup-macos-elcapitan-for-developer/">Russian</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Настройка MacOS ElCapitan для разработки</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/maninserg/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Segei Manin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/configuration/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Configuration</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-06">2023-01-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;436 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-настройка-клавиатуры-motospeed-ck104-a-id1-настройка-клавиатуры-motospeed-ck104a">1. Настройка клавиатуры Motospeed Ck104 <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#2-установка-xcode-и-command-line-tools-a-id2-установка-xcode-и-command-line-toolsa">2. Установка XCode и Command Line Tools <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#3-установка-macports-и-пакетов-a-id3-установка-macports-и-пакетовa">3. Установка MacPorts и пакетов <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#4-установка-браузеров-chrome-и-firefox-a-id4-установка-браузеров-chrome-и-firefoxa">4. Установка браузеров Chrome и Firefox <!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#5-установка-virtualbox-и-виртуальных-машин-a-id5-установка-virtualbox-и-виртуальных-машинa">5. Установка VirtualBox и виртуальных машин <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#6-установка-visual-studio-code-a-id6-установка-visual-studio-codea">6. Установка Visual Studio Code <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#7-установка-mamp-a-id7-установка-mampa">7. Установка MAMP <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="1-настройка-клавиатуры-motospeed-ck104-a-id1-настройка-клавиатуры-motospeed-ck104a">1. Настройка клавиатуры Motospeed Ck104 <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Заходим в <code>System Preference/Keyboard/Modifier Keys</code>, там выбираем <code>USB Gaming Keyboard</code>. И меняем клавиши <code>Control</code> и <code>Option</code> местами, чтобы было соотвествие расположения клавиш Apple Keyboard:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./2023-01-05-min.jpg"
+        data-srcset="./2023-01-05-min.jpg, ./2023-01-05-min.jpg 1.5x, ./2023-01-05-min.jpg 2x"
+        data-sizes="auto"
+        alt="./2023-01-05-min.jpg"
+        title="Настройки клавиатуры" /></p>
+<h2 id="2-установка-xcode-и-command-line-tools-a-id2-установка-xcode-и-command-line-toolsa">2. Установка XCode и Command Line Tools <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Максимальная версия XCode доступная для установки на MacOS ElCapitan <code>8.2.1</code>.</p>
+<p>Скачиваем XCode и соотвествующую ему версию CLT c <a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener noreffer ">офиц.сайт Apple</a></p>
+<p>Устанавливаем <code>XCode 8.2.1</code> из файла <code>Xcode_8.2.1.xip</code> и CLT из файла <code>Command_Line_Tools_macOS_10.11_for_Xcode_8.2.dmg</code></p>
+<h2 id="3-установка-macports-и-пакетов-a-id3-установка-macports-и-пакетовa">3. Установка MacPorts и пакетов <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p><a href="https://www.macports.org/install.php#installing" target="_blank" rel="noopener noreffer ">Страница со всеми доступными версиями MacPorts</a></p>
+<p><a href="https://github.com/macports/macports-base/releases/download/v2.8.0/MacPorts-2.8.0-10.11-ElCapitan.pkg" target="_blank" rel="noopener noreffer ">Ссылка на скачивание MacPorts для MacOS ElCapitan</a></p>
+<p>Запускаем файл <code>.pkg</code> и следуем инструкциям по установке.</p>
+<p><a href="https://ports.macports.org/" target="_blank" rel="noopener noreffer ">Страница с доступными Ports</a></p>
+<p>Устанавливаем следующие пакеты:</p>
+<ul>
+<li><em>Инструменты для разработки:</em>
+<ul>
+<li><code>sudo port install git</code> <a href="https://ports.macports.org/port/git/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install vim</code> <a href="https://ports.macports.org/port/vim/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install docker</code> <a href="https://ports.macports.org/port/docker/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Языки программирования:</em>
+<ul>
+<li><code>sudo port install python310</code> <a href="https://ports.macports.org/port/python310/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install py310-setuptools</code> <a href="https://ports.macports.org/port/py310-setuptools/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nodejs18</code> <a href="https://ports.macports.org/port/nodejs18/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install php82</code> <a href="https://ports.macports.org/port/php82/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ruby31</code> <a href="https://ports.macports.org/port/ruby31/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install go</code> <a href="https://ports.macports.org/port/go/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Базы данных:</em>
+<ul>
+<li><code>sudo port install sqlite3</code> <a href="https://ports.macports.org/port/sqlite3/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install mysql57</code> <a href="https://ports.macports.org/port/mysql57/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install postgresql15</code> <a href="https://ports.macports.org/port/postgresql15/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install mariadb</code> <a href="https://ports.macports.org/port/mariadb/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install redis</code> <a href="https://ports.macports.org/port/redis/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Web-серверы:</em>
+<ul>
+<li><code>sudo port install apache2</code> <a href="https://ports.macports.org/port/apache2/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nginx</code> <a href="https://ports.macports.org/port/nginx/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Среды разработки:</em>
+<ul>
+<li><code>sudo port install Arduino</code> <a href="https://ports.macports.org/port/Arduino/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Инструменты для работы с сетью:</em>
+<ul>
+<li><code>sudo port install curl</code> <a href="https://ports.macports.org/port/curl/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nmap</code> <a href="https://ports.macports.org/port/nmap/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install wireshark3</code> <a href="https://ports.macports.org/port/wireshark3/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install elinks</code> <a href="https://ports.macports.org/port/elinks/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Инструменты для работы с видео:</em>
+<ul>
+<li><code>sudo port install youtube-dl</code> <a href="https://ports.macports.org/port/youtube-dl/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ffmpeg</code> <a href="https://ports.macports.org/port/ffmpeg/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install VLC</code> <a href="https://ports.macports.org/port/VLC/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Системные утилиты:</em>
+<ul>
+<li><code>sudo port install htop</code> <a href="https://ports.macports.org/port/htop/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install neofetch</code> <a href="https://ports.macports.org/port/neofetch/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nnn</code> <a href="https://ports.macports.org/port/nnn/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Инструменты для работы с графикой:</em>
+<ul>
+<li><code>sudo port install gimp2</code> <a href="https://ports.macports.org/port/gimp2/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ImageMagick</code> <a href="https://ports.macports.org/port/ImageMagick/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="4-установка-браузеров-chrome-и-firefox-a-id4-установка-браузеров-chrome-и-firefoxa">4. Установка браузеров Chrome и Firefox <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<h4 id="heading"></h4>
+<p>Доступная версия Google Chrome для MacOS ElCapitan <code>102.0.5005.63</code>. Скачиваем с <a href="https://google-chrome.en.uptodown.com/mac/download/62632406" target="_blank" rel="noopener noreffer ">офиц.сайта Google</a>. И устанавливаем из скачанного файла <code>google-chrome-102-0-5005-63.pkg</code>.</p>
+<p>Доступная версия Firefox для MacOS ElCapitan <code>78.15.0esr</code>. Скачиваем с <a href="https://ftp.mozilla.org/pub/firefox/releases/78.15.0esr/mac/ru/" target="_blank" rel="noopener noreffer ">офиц.сайта Firefox</a> - русская версия, <a href="https://ftp.mozilla.org/pub/firefox/releases/78.15.0esr/mac/en-US/" target="_blank" rel="noopener noreffer ">офиц.сайта Firefox</a> - английская версия. Устанавливаем из скачанного образа <code>Firefox 78.15.0esr_ru.dmg</code> или <code>Firefox 78.15.0esr_en_US.dmg</code></p>
+<p>Устанавливаем расширения для Firefox <code>РуТрекер - официальный плагин (доступ и пр.)</code>, <code>AdBlocker Ultimate</code>, <code>Print Edit WE</code>, <code>SingleFile</code>, <code>TWP - Translate Web Pages</code></p>
+<h2 id="5-установка-virtualbox-и-виртуальных-машин-a-id5-установка-virtualbox-и-виртуальных-машинa">5. Установка VirtualBox и виртуальных машин <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Доступная версия VirtualBox для MacOS ElCapitan <code>6.1.40</code>, скачиваем ее  с <a href="https://www.virtualbox.org/wiki/Download_Old_Builds_6_1" target="_blank" rel="noopener noreffer ">офиц.сайта</a>.</p>
+<p>Устанавливаем следующие образы ОС <code>debian-live-11.5.0-amd64-cinnamon.iso</code>, <code>CentOS-7-x86_64-NetInstall-2009.iso</code>, <code>kali-linux-2022.3-installer-netinst-amd64.iso</code>, <code>ubuntu-22.04.1-live-server-amd64</code>.</p>
+<p>Для виртуальных машин выбираем следующие параметры:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./2023-01-06-min.jpg"
+        data-srcset="./2023-01-06-min.jpg, ./2023-01-06-min.jpg 1.5x, ./2023-01-06-min.jpg 2x"
+        data-sizes="auto"
+        alt="./2023-01-06-min.jpg"
+        title="Настройки клавиатуры" /></p>
+<p><strong>Для KaliLinux размер жесткого диска необходим 80Гб</strong></p>
+<h2 id="6-установка-visual-studio-code-a-id6-установка-visual-studio-codea">6. Установка Visual Studio Code <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Доступная версия Visual Studio Code для MacOS ElCapitan <code>1.74.2</code>, скачиваем ее с <a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener noreffer ">офиц.сайта</a>.</p>
+<p>Разархивируем zip-архив и копируем приложение в <code>Applications</code></p>
+<h2 id="7-установка-mamp-a-id7-установка-mampa">7. Установка MAMP <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Доступная версия MAMP для MacOS ElCapitan <code>5.7</code>, скачиваем ее с <a href="https://www.mamp.info/en/downloads/older-versions/" target="_blank" rel="noopener noreffer ">офиц.сайта</a>, там же есть более старые версии MAMP.
+<a href="https://downloads.mamp.info/MAMP-PRO/releases/5.7/MAMP_MAMP_PRO_5.7.pkg" target="_blank" rel="noopener noreffer ">Ссылка на скачивание версии MAMP 5.7</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/setup-macos-elcapitan-for-developer/" data-title="Настройка MacOS ElCapitan для разработки" data-hashtags="MacOS,configuration"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/setup-macos-elcapitan-for-developer/" data-hashtag="MacOS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/setup-macos-elcapitan-for-developer/" data-title="Настройка MacOS ElCapitan для разработки"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/setup-macos-elcapitan-for-developer/" data-title="Настройка MacOS ElCapitan для разработки"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/setup-macos-elcapitan-for-developer/" data-title="Настройка MacOS ElCapitan для разработки"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/macos/">MacOS</a>,&nbsp;<a href="/tags/configuration/">configuration</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/clean-install-macos-elcapitan/" class="prev" rel="prev" title="Чистая установка MacOS ElCapitan"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Чистая установка MacOS ElCapitan</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.68.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/maninserg/" target="_blank">Sergei Manin</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Manin Sergei DevBlog","id-2":"Manin Sergei DevBlog"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

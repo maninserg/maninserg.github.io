@@ -1,0 +1,30 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Manin Sergei DevBlog</title>
+        <link>/posts/</link>
+        <description>All Posts | Manin Sergei DevBlog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>manin.serg@gmail.com (Sergei Manin)</managingEditor>
+            <webMaster>manin.serg@gmail.com (Sergei Manin)</webMaster><lastBuildDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Setting up macOS ElCapitan for development</title>
+    <link>/posts/settting-up-macos-elcapitan-for-developer/</link>
+    <pubDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</pubDate>
+    <author>Segei Manin</author>
+    <guid>/posts/settting-up-macos-elcapitan-for-developer/</guid>
+    <description><![CDATA[1. Keyboard setup Motospeed Ck104  Go to System Preference/Keyboard/Modifier Keys and select USB Gaming Keyboard. And we change the Control and Option keys in places so that the location of the Apple Keyboard keys matches:
+  2. Installing Xcode and Command Line Tools  The maximum version of XCode available for installation on MacOS ElCapitan 8.2.1.
+Download XCode and its corresponding CLT version from Apple official website
+Install XCode 8.]]></description>
+</item>
+<item>
+    <title>Clean install of macOS El Capitan</title>
+    <link>/posts/clean-install-macos-elcapitan/</link>
+    <pubDate>Thu, 05 Jan 2023 22:04:28 &#43;0300</pubDate>
+    <author>Segei Manin</author>
+    <guid>/posts/clean-install-macos-elcapitan/</guid>
+    <description><![CDATA[1. Downloading the macOS El Capitan Installer  Page with all available versions of MacOS on the official website
+Mac OS El Capitan 10.11.6 Download Link
+2. Installing the macOS El Capitan Installer  Double click on the downloaded .dmg file. Double click on the .pkg file. We follow the instructions. The macOS ElCapitan installer will be installed in the Applications folder.
+3. Create a bootable installer on a USB flash drive or built-in volume The USB flash drive or other volume must have a capacity of at least 14 GB and be formatted with the MacOS Extended (Journaled) file system.]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Setting up macOS ElCapitan for development - Manin Sergei DevBlog</title><meta name="Description" content="This is Manin Sergei DevBlog"><meta property="og:title" content="Setting up macOS ElCapitan for development" />
+<meta property="og:description" content="1. Keyboard setup Motospeed Ck104  Go to System Preference/Keyboard/Modifier Keys and select USB Gaming Keyboard. And we change the Control and Option keys in places so that the location of the Apple Keyboard keys matches:
+  2. Installing Xcode and Command Line Tools  The maximum version of XCode available for installation on MacOS ElCapitan 8.2.1.
+Download XCode and its corresponding CLT version from Apple official website
+Install XCode 8." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/settting-up-macos-elcapitan-for-developer/" />
+<meta property="article:published_time" content="2023-01-06T22:04:28+03:00" />
+<meta property="article:modified_time" content="2023-01-06T22:04:28+03:00" /><meta property="og:site_name" content="Manin Sergei DevBlog" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up macOS ElCapitan for development"/>
+<meta name="twitter:description" content="1. Keyboard setup Motospeed Ck104  Go to System Preference/Keyboard/Modifier Keys and select USB Gaming Keyboard. And we change the Control and Option keys in places so that the location of the Apple Keyboard keys matches:
+  2. Installing Xcode and Command Line Tools  The maximum version of XCode available for installation on MacOS ElCapitan 8.2.1.
+Download XCode and its corresponding CLT version from Apple official website
+Install XCode 8."/>
+<meta name="application-name" content="Manin Sergei DevBlog">
+<meta name="apple-mobile-web-app-title" content="Manin Sergei DevBlog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="favicon_30-30.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/settting-up-macos-elcapitan-for-developer/" /><link rel="prev" href="/posts/clean-install-macos-elcapitan/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Setting up macOS ElCapitan for development",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/settting-up-macos-elcapitan-for-developer\/"
+        },"genre": "posts","keywords": "MacOS, configuration","wordcount":  536 ,
+        "url": "\/posts\/settting-up-macos-elcapitan-for-developer\/","datePublished": "2023-01-06T22:04:28+03:00","dateModified": "2023-01-06T22:04:28+03:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Segei Manin"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Manin Sergei DevBlog"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/settting-up-macos-elcapitan-for-developer/" selected>English</option><option value="/ru/posts/setup-macos-elcapitan-for-developer/">Russian</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Manin Sergei DevBlog"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/settting-up-macos-elcapitan-for-developer/" selected>English</option><option value="/ru/posts/setup-macos-elcapitan-for-developer/">Russian</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Setting up macOS ElCapitan for development</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/maninserg/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Segei Manin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/configuration/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Configuration</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-06">2023-01-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;536 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-keyboard-setup-motospeed-ck104-a-id1-keyboard-setup-motospeed-ck104a">1. Keyboard setup Motospeed Ck104 <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#2-installing-xcode-and-command-line-tools-a-id2-installing-xcode-and-command-line-toolsa">2. Installing Xcode and Command Line Tools <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#3-installing-macports-and-packages-a-id3-installing-macports-and-packagesa">3. Installing MacPorts and packages <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#4-installing-chrome-and-firefox-browsers-a-id4-installing-chrome-and-firefox-browsersa">4. Installing Chrome and Firefox browsers <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#5-installing-virtualbox-and-virtual-machines-a-id5-installing-virtualbox-and-virtual-machinesa">5. Installing VirtualBox and Virtual Machines <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#6-install-visual-studio-code-a-id6-install-visual-studio-codea">6. Install Visual Studio Code <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#7-install-mamp-a-id7-install-mampa">7. Install MAMP <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+    <li><a href="#8-setting-up-github-a-id8-setting-up-githuba">8. Setting up GitHub <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="1-keyboard-setup-motospeed-ck104-a-id1-keyboard-setup-motospeed-ck104a">1. Keyboard setup Motospeed Ck104 <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Go to <code>System Preference/Keyboard/Modifier Keys</code> and select <code>USB Gaming Keyboard</code>. And we change the <code>Control</code> and <code>Option</code> keys in places so that the location of the Apple Keyboard keys matches:</p>
+<figure>
+    <img src="./2023-01-05-min.jpg"/> 
+</figure>
+
+<h2 id="2-installing-xcode-and-command-line-tools-a-id2-installing-xcode-and-command-line-toolsa">2. Installing Xcode and Command Line Tools <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>The maximum version of XCode available for installation on MacOS ElCapitan <code>8.2.1</code>.</p>
+<p>Download XCode and its corresponding CLT version from <a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener noreffer ">Apple official website</a></p>
+<p>Install <code>XCode 8.2.1</code> from <code>Xcode_8.2.1.xip</code> and then CLT from <code>Command_Line_Tools_macOS_10.11_for_Xcode_8.2.dmg</code></p>
+<h2 id="3-installing-macports-and-packages-a-id3-installing-macports-and-packagesa">3. Installing MacPorts and packages <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p><a href="https://www.macports.org/install.php#installing" target="_blank" rel="noopener noreffer ">Page with all available versions of MacPorts</a></p>
+<p><a href="https://github.com/macports/macports-base/releases/download/v2.8.0/MacPorts-2.8.0-10.11-ElCapitan.pkg" target="_blank" rel="noopener noreffer ">MacPorts download link for MacOS ElCapitan</a></p>
+<p>Run the <code>.pkg</code> file and follow the installation instructions.</p>
+<p><a href="https://ports.macports.org/" target="_blank" rel="noopener noreffer ">Page with available Ports</a></p>
+<p>Install the following packages::</p>
+<ul>
+<li><em>Development tools:</em>
+<ul>
+<li><code>sudo port install git</code> <a href="https://ports.macports.org/port/git/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install vim</code> <a href="https://ports.macports.org/port/vim/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install docker</code> <a href="https://ports.macports.org/port/docker/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Programming languages:</em>
+<ul>
+<li><code>sudo port install python310</code> <a href="https://ports.macports.org/port/python310/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install py310-setuptools</code> <a href="https://ports.macports.org/port/py310-setuptools/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nodejs18</code> <a href="https://ports.macports.org/port/nodejs18/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install php82</code> <a href="https://ports.macports.org/port/php82/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ruby31</code> <a href="https://ports.macports.org/port/ruby31/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install go</code> <a href="https://ports.macports.org/port/go/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Databases:</em>
+<ul>
+<li><code>sudo port install sqlite3</code> <a href="https://ports.macports.org/port/sqlite3/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install mysql57</code> <a href="https://ports.macports.org/port/mysql57/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install postgresql15</code> <a href="https://ports.macports.org/port/postgresql15/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install mariadb</code> <a href="https://ports.macports.org/port/mariadb/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install redis</code> <a href="https://ports.macports.org/port/redis/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Web-серверы:</em>
+<ul>
+<li><code>sudo port install apache2</code> <a href="https://ports.macports.org/port/apache2/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nginx</code> <a href="https://ports.macports.org/port/nginx/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Development environments:</em>
+<ul>
+<li><code>sudo port install Arduino</code> <a href="https://ports.macports.org/port/Arduino/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Network tools:</em>
+<ul>
+<li><code>sudo port install curl</code> <a href="https://ports.macports.org/port/curl/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nmap</code> <a href="https://ports.macports.org/port/nmap/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install wireshark3</code> <a href="https://ports.macports.org/port/wireshark3/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install elinks</code> <a href="https://ports.macports.org/port/elinks/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Video tools:</em>
+<ul>
+<li><code>sudo port install youtube-dl</code> <a href="https://ports.macports.org/port/youtube-dl/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ffmpeg</code> <a href="https://ports.macports.org/port/ffmpeg/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install VLC</code> <a href="https://ports.macports.org/port/VLC/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>System Utilities:</em>
+<ul>
+<li><code>sudo port install htop</code> <a href="https://ports.macports.org/port/htop/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install neofetch</code> <a href="https://ports.macports.org/port/neofetch/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install nnn</code> <a href="https://ports.macports.org/port/nnn/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+<li><em>Graphics tools:</em>
+<ul>
+<li><code>sudo port install gimp2</code> <a href="https://ports.macports.org/port/gimp2/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+<li><code>sudo port install ImageMagick</code> <a href="https://ports.macports.org/port/ImageMagick/details/" target="_blank" rel="noopener noreffer ">details</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="4-installing-chrome-and-firefox-browsers-a-id4-installing-chrome-and-firefox-browsersa">4. Installing Chrome and Firefox browsers <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>The available version of Google Chrome for MacOS ElCapitan is <code>102.0.5005.63</code>. Download from <a href="https://google-chrome.en.uptodown.com/mac/download/62632406" target="_blank" rel="noopener noreffer ">Google official website</a>. And install from the downloaded file <code>google-chrome-102-0-5005-63.pkg</code>.</p>
+<p>The available version of Firefox for MacOS ElCapitan is <code>78.15.0esr</code>. Download from <a href="https://ftp.mozilla.org/pub/firefox/releases/78.15.0esr/mac/ru/" target="_blank" rel="noopener noreffer ">Firefox official website</a> - Russian version, <a href="https://ftp.mozilla.org/pub/firefox/releases/78.15.0esr/mac/en-US/" target="_blank" rel="noopener noreffer ">Firefox official website</a> - English version. Install from the downloaded image <code>Firefox 78.15.0esr_ru.dmg</code> or <code>Firefox 78.15.0esr_en_US.dmg</code></p>
+<p>Install extensions for Firefox <code>RuTracker - official plugin (access, etc.)</code>, <code>AdBlocker Ultimate</code>, <code>Print Edit WE</code>, <code>SingleFile</code>, <code>TWP - Translate Web Pages</code></p>
+<h2 id="5-installing-virtualbox-and-virtual-machines-a-id5-installing-virtualbox-and-virtual-machinesa">5. Installing VirtualBox and Virtual Machines <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Available version of VirtualBox for MacOS ElCapitan <code>6.1.40</code>, download it from <a href="https://www.virtualbox.org/wiki/Download_Old_Builds_6_1" target="_blank" rel="noopener noreffer ">official website</a>.</p>
+<p>Install the following OS images <code>debian-live-11.5.0-amd64-cinnamon.iso</code>, <code>CentOS-7-x86_64-NetInstall-2009.iso</code>, <code>kali-linux-2022.3-installer-netinst-amd64.iso</code>, <code>ubuntu-22.04.1-live-server-amd64</code>.</p>
+<p>For virtual machines select the following options:</p>
+<p><figure>
+    <img src="./2023-01-06-min.jpg"/> 
+</figure>
+
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>KaliLinux requires 80GB hard drive</strong></div>
+        </div>
+    </div></p>
+<h2 id="6-install-visual-studio-code-a-id6-install-visual-studio-codea">6. Install Visual Studio Code <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Available version of Visual Studio Code for MacOS ElCapitan <code>1.74.2</code>, download it from <a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener noreffer ">official site</a>.</p>
+<p>Unzip the zip archive and copy the application to <code>Applications</code></p>
+<h2 id="7-install-mamp-a-id7-install-mampa">7. Install MAMP <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p>Available version of MAMP for MacOS ElCapitan <code>5.7</code>, download it from <a href="https://www.mamp.info/en/downloads/older-versions/" target="_blank" rel="noopener noreffer ">official site</a>, there are also older versions of MAMP.
+<a href="https://downloads.mamp.info/MAMP-PRO/releases/5.7/MAMP_MAMP_PRO_5.7.pkg" target="_blank" rel="noopener noreffer ">Download link for MAMP 5.7</a></p>
+<h2 id="8-setting-up-github-a-id8-setting-up-githuba">8. Setting up GitHub <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Generate ssh-key</span>
+ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span> -C <span style="color:#e6db74">&#34;manin.serg@mail.com&#34;</span>
+
+<span style="color:#75715e"># Copy public key to clipboard</span>
+pbcopy ~/.ssh/id_rsa.pub
+</code></pre></div><p>Add a new ssh key to GitHub in <code>Profile/Settings/SSH and GPG keys/New SSH key</code>. Paste the copied public key from the clipboard and give it a name.</p>
+<p>Testing the connection using ssh keys:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -T git@github.com
+</code></pre></div><p>Set up <code>git</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global user.name <span style="color:#e6db74">&#34;Sergei Manin&#34;</span>
+git config --global user.email <span style="color:#e6db74">&#34;manin.serg@gmail.com&#34;</span>
+git config --global github.user maninserg
+git config --global color.ui true
+</code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/settting-up-macos-elcapitan-for-developer/" data-title="Setting up macOS ElCapitan for development" data-hashtags="MacOS,configuration"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/settting-up-macos-elcapitan-for-developer/" data-hashtag="MacOS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/settting-up-macos-elcapitan-for-developer/" data-title="Setting up macOS ElCapitan for development"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/settting-up-macos-elcapitan-for-developer/" data-title="Setting up macOS ElCapitan for development"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/settting-up-macos-elcapitan-for-developer/" data-title="Setting up macOS ElCapitan for development"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/macos/">MacOS</a>,&nbsp;<a href="/tags/configuration/">configuration</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/clean-install-macos-elcapitan/" class="prev" rel="prev" title="Clean install of macOS El Capitan"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Clean install of macOS El Capitan</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/maninserg/" target="_blank">Sergei Manin</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.fill%2CArray.prototype.find%2CArray.from%2CIntersectionObserver%2CMath.sign%2CObject.assign%2CPromise%2CObject.entries%2Chtml5shiv%2CObject.values%2Cfetch%2CElement.prototype.after"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/object-fit-images@3.2.4/dist/ofi.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Manin Sergei DevBlog","id-2":"Manin Sergei DevBlog"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

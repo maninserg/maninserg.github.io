@@ -1,0 +1,79 @@
+theme = "LoveIt"
+
+[author]
+  name = "Sergei Manin"
+  email = "manin.serg@gmail.com"
+  link = "https://github.com/maninserg/"
+
+publishDir="docs"
+
+defaultContentLanguage = "ru"
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "Manin Sergei DevBlog"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
+
+  [languages.ru]
+    weight = 3
+    title = "Manin Sergei DevBlog"
+    languageCode = "ru"
+    languageName = "Russian"
+    [[languages.ru.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Статьи"
+      url = "/posts/"
+      title = ""
+    [[languages.ru.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Тэги"
+      url = "/tags/"
+      title = ""
+    [[languages.ru.menu.main]]
+      weight = 3
+      identifier = "categories"
+      name = "Категории"
+      pre = ""
+      post = ""
+      url = "/categories/"
+      title = ""
+
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+
+
+

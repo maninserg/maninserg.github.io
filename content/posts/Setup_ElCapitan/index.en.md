@@ -40,6 +40,7 @@ Install the following packages::
   - `sudo port install git` [details](https://ports.macports.org/port/git/details/)
   - `sudo port install vim` [details](https://ports.macports.org/port/vim/details/)
   - `sudo port install docker` [details](https://ports.macports.org/port/docker/details/)
+  - `sudo port install py310-ansible` [details](https://ports.macports.org/port/py310-ansible/details/)
 - *Programming languages:*
   - `sudo port install python310` [details](https://ports.macports.org/port/python310/details/)
   - `sudo port install py310-setuptools` [details](https://ports.macports.org/port/py310-setuptools/details/)

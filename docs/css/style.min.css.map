@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/serg/Downloads/hugo_extended_0.80.0_macOS-64bit/myblog",
+	"sourceRoot": "/Users/serg/Downloads/myblog_hugo_extended/src_myblog",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

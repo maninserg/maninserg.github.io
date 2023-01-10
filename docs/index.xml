@@ -8,10 +8,10 @@
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Setting up macOS ElCapitan for development</title>
-    <link>/posts/settting-up-macos-elcapitan-for-developer/</link>
+    <link>/posts/setting-up-macos-elcapitan-for-developer/</link>
     <pubDate>Fri, 06 Jan 2023 22:04:28 &#43;0300</pubDate>
     <author>Segei Manin</author>
-    <guid>/posts/settting-up-macos-elcapitan-for-developer/</guid>
+    <guid>/posts/setting-up-macos-elcapitan-for-developer/</guid>
     <description><![CDATA[1. Keyboard setup Motospeed Ck104  Go to System Preference/Keyboard/Modifier Keys and select USB Gaming Keyboard. And we change the Control and Option keys in places so that the location of the Apple Keyboard keys matches:
   2. Installing Xcode and Command Line Tools  The maximum version of XCode available for installation on MacOS ElCapitan 8.2.1.
 Download XCode and its corresponding CLT version from Apple official website

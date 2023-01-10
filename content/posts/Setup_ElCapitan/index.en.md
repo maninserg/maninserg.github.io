@@ -5,7 +5,7 @@ draft: false
 author: "Segei Manin"
 tags: ["MacOS", "configuration"]
 categories: [Configuration]
-slug: “settting-up-macos-elcapitan-for-developer”
+slug: “setting-up-macos-elcapitan-for-developer”
 ---
 
 ## 1. Keyboard setup Motospeed Ck104 <a id="1. Keyboard setup Motospeed Ck104"></a>
